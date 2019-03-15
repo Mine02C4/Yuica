@@ -1,0 +1,6 @@
+#ifndef YUICA_IMAGE_ANALYZER_MAIN_H_
+#define YUICA_IMAGE_ANALYZER_MAIN_H_
+
+namespace yuica {}
+
+#endif  // YUICA_IMAGE_ANALYZER_MAIN_H_
