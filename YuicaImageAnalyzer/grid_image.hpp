@@ -10,8 +10,14 @@ namespace yuica {
 class GridImage {
  public:
   void LoadImage(std::filesystem::path filepath);
+  void DetectCards();
 
  private:
+  bool image_loaded_ = false;
+  cv::Mat source_image_;
+  cv::Mat card_roi_;
+  int GetSourceWidth() { return source_image_.size().width; }
+  int GetSourceHeight() { return source_image_.size().height; }
 };
 
 }  // namespace yuica
