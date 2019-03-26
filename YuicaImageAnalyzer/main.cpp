@@ -19,6 +19,7 @@ int main(int argc, char** argv) {
   grid_image.LoadImage(image_path);
   for (;;) {
     grid_image.DetectCards();
+    grid_image.ShowCards();
     if (cv::waitKey(0) == 27 /* Esc */) break;
   }
   return 0;
